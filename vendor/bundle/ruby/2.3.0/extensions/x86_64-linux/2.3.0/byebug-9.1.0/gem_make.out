@@ -1,0 +1,19 @@
+current directory: /home/amir/workspaces/checkclass/classCheck/vendor/bundle/ruby/2.3.0/gems/byebug-9.1.0/ext/byebug
+/usr/bin/ruby2.3 -r ./siteconf20170825-7624-1ocxeru.rb extconf.rb
+creating Makefile
+
+current directory: /home/amir/workspaces/checkclass/classCheck/vendor/bundle/ruby/2.3.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/amir/workspaces/checkclass/classCheck/vendor/bundle/ruby/2.3.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/amir/workspaces/checkclass/classCheck/vendor/bundle/ruby/2.3.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170825-7624-86ne4j/byebug

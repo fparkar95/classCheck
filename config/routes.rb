@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   resources :courses
   # You can have the root of your site routed with "root"
    root 'courses#index'
-
+    
+    match '/about_us',   to: 'pages#about_us', via: :get
+    match '/contact_us', to: 'pages#contact_us', via: :get
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

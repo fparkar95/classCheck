@@ -591,10 +591,10 @@ ul.media-list li.media div.comment-holder {
 	margin-bottom: 10px;
 }
 .btn-realto-form {
-	background: #5FB000;
+	background: grey;
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	border: 1px solid #559B00;
+	border: 1px solid silver;
 	border-radius: 4px;
 	padding: 8px 0;
 	margin: 10px 0 0;
@@ -1016,10 +1016,10 @@ input, textarea {
   width: 20%;
   height: 100%;
   padding: 5px 10px;
-  background: none;
+  background: white;
   background-image: none;
   border: 1px solid #a0b3b0;
-  color: #ffffff;
+  color: black;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;

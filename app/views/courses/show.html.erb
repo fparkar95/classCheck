@@ -1,0 +1,14 @@
+ <div class="clearfix padding030 row-fluid">
+     <h1 class="info-label clearfix"><span class="pull-left">Course Name:</span>
+                                <span class="qty pull-left"><%= @course.name %></span></h1>
+                        <ul class="more-info pull-left span6">
+                            
+                            <li class="info-label clearfix"><span class="pull-left">Description:</span>
+                                <span class="qty pull-right"><%= @course.description %></span></li>
+                         
+                        </ul>
+                    </div>
+                    <div class="clearfix padding030 row-fluid">
+                    <center><%= link_to "Take Attendance", new_user_session_path, class: "btn span3 btn-realto-form btn-large" %> </center>
+                    </div>
+                    

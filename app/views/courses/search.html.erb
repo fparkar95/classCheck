@@ -1,0 +1,44 @@
+<div class="container page-content">
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <% if @courses.blank? %>
+              >
+                <h3><bold>Could not find a course with your search criteria</bold></h3>
+                
+                <% else %>
+                <% @courses.each do |course| %>
+                <div class="span4 box-container">
+                    <div class="holder">
+                        <a class="overlay" href="#" title="property title">
+                            <span class="more"></span>
+                            <% if course.image_url.present? %>
+                                <%= link_to image_tag(course.image_url.to_s), course %>
+                            <% else %>
+                                <%= link_to image_tag("https://placehold.it/370x210"), course %>
+                             <% end %>
+                        </a>
+                        
+                        <div class="prop-info">
+                            <h3 class="prop-title"><%= link_to course.name, course %></h3>
+                            <ul class="more-info clearfix">
+                                <li class="info-label clearfix"><span class="pull-left">Course Code:</span>
+                                    <span class="qty pull-right"><%= course.coursecode %></span></li>
+                                <li class="info-label clearfix"><span class="pull-left">Description: </span>
+                                    <span class="qty pull-right"><%= course.description %></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <% end %>
+                <% end %>
+                    </div>
+                </div>
+                <!-- .span4 .box-container -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .span12 -->
+    </div>
+    <!-- .row -->
+</div>

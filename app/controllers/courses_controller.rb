@@ -19,7 +19,12 @@ class CoursesController < ApplicationController
             flash[:danger] = @course.errors.full_messages.to_sentence
             render 'new'
         end
-    end
+   end
+   
+   def search
+        @courses = Course.search(params)
+        
+   end
     
      private
         def course_params
